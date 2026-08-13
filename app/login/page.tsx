@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -16,21 +16,33 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
   if (session) {
     router.replace('/dashboard');
-    return null;
   }
+}, [session, router]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    setLoading(true);
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
-    if (error) {
-      setError(error.message);
-      return;
-    }
+   setLoading(true);
+
+console.log("LOGIN START");
+console.log("EMAIL:", email);
+
+const { error } = await supabase.auth.signInWithPassword({
+  email,
+  password,
+});
+
+console.log("LOGIN RESPONSE:", error);
+
+setLoading(false);
+
+if (error) {
+  setError(error.message);
+  return;
+}
     router.replace('/dashboard');
   };
 
