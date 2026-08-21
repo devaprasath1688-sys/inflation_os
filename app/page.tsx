@@ -9,16 +9,19 @@ import { Problem } from '@/components/landing/problem';
 import { Solution } from '@/components/landing/solution';
 import { Features } from '@/components/landing/features';
 import { HowItWorks } from '@/components/landing/how-it-works';
-import { Testimonials } from '@/components/landing/testimonials';
-import { Pricing } from '@/components/landing/pricing';
 import { FAQ } from '@/components/landing/faq';
 import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-background">
+      {/* Purple cursor glow */}
       <MouseGlow />
+
+      {/* Background particles */}
       <ParticleBackground count={20} />
+
+      {/* Existing landing page */}
       <Navbar />
       <Hero />
       <WhyInflation />
@@ -26,8 +29,6 @@ export default function Home() {
       <Solution />
       <Features />
       <HowItWorks />
-      <Testimonials />
-      <Pricing />
       <FAQ />
       <Footer />
     </main>

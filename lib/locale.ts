@@ -60,11 +60,39 @@ const savingsLabels: Record<string, string> = {
 };
 
 const cities = [
+  // Tamil Nadu
   'Chennai',
   'Coimbatore',
   'Madurai',
   'Tiruchirappalli',
   'Salem',
+  'Tirunelveli',
+  'Erode',
+  'Vellore',
+  'Thoothukudi',
+  'Dindigul',
+  'Thanjavur',
+  'Ranipet',
+  'Kanchipuram',
+  'Karur',
+  'Namakkal',
+  'Cuddalore',
+  'Tiruvannamalai',
+  'Villupuram',
+  'Nagapattinam',
+  'Mayiladuthurai',
+  'Sivaganga',
+  'Ramanathapuram',
+  'Virudhunagar',
+  'Pudukkottai',
+  'Dharmapuri',
+  'Krishnagiri',
+  'Ariyalur',
+  'Perambalur',
+  'Tenkasi',
+  'Kallakurichi',
+
+  // Other major Indian cities
   'Bengaluru',
   'Hyderabad',
   'Mumbai',
@@ -72,6 +100,18 @@ const cities = [
   'Pune',
   'Kolkata',
   'Ahmedabad',
+  'Kochi',
+  'Thiruvananthapuram',
+  'Visakhapatnam',
+  'Vijayawada',
+  'Bhubaneswar',
+  'Jaipur',
+  'Lucknow',
+  'Chandigarh',
+  'Bhopal',
+  'Indore',
+  'Patna',
+  'Guwahati',
 ];
 
 const states = [

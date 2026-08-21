@@ -36,6 +36,7 @@ export interface OnboardingData {
     internet: number;
     medical: number;
     education: number;
+    educationFrequency: 'monthly' | 'yearly' | 'semester';
     entertainment: number;
     shopping: number;
     travel: number;

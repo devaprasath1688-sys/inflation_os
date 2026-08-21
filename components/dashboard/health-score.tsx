@@ -57,7 +57,7 @@ export function HealthScore({ value, size = 160 }: HealthScoreProps) {
           transition={{ duration: 1.6, ease: 'easeOut' }}
         />
       </svg>
-      <div className="absolute flex flex-col items-center justify-center">
+     <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
         <motion.p className="font-display text-4xl font-bold" style={{ color }}>
           {Math.round(display)}
         </motion.p>
